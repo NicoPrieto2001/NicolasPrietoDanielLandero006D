@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button defaultHref="/" text="regresar" mode="android"></ion-button>
+    </ion-buttons>
+    <ion-title>Formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+
+    <ion-item>
+      <ion-label>Nombre Del Usuario</ion-label>
+      <ion-input type="text" placeholder="NicoYBryan" requiered name="nombreU"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Edad</ion-label>
+      <ion-input type="number" placeholder="Annos" requiered name="Edad"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Numero De telefono</ion-label>
+      <ion-input type="number" placeholder="fono" requiered name="telefono"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Correo Electronico</ion-label>
+      <ion-input type="email" placeholder="nicodani@gmail.com" patern="^([a-zA-Z0-9-.]+)@([a-zA-Z0-9-.]+).([a-zA-Z]{2,5})$" [(ngModel)]="usuario.email" required name=""></ion-input>
+    
+
+    </ion-item>
+    <ion-item>
+      <ion-label>Contraseña</ion-label>
+      <ion-input type="password" placeholder="12345678" [(ngModel)]="usuario.password" required name="contrasena"></ion-input>
+    </ion-item>
+    <ion-button [disabled]="formulario.invalid" type="submit" routerlink="/primario" expand="block" fill="clear" shape="round">
+      Click me
+    </ion-button>
+
+  
+  </form>
+
+</ion-content>

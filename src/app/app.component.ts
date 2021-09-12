@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 interface componente {
   icon:string;
   name:string;

@@ -5,12 +5,14 @@ interface componente {
   name:string;
   redirecTo:string;
 }
+
 @Component({
   selector: 'app-primario',
   templateUrl: './primario.page.html',
   styleUrls: ['./primario.page.scss'],
 })
 export class PrimarioPage implements OnInit {
+
   componentes:componente[]=[
     {
       icon:'aperture-sharp',
@@ -32,11 +34,13 @@ export class PrimarioPage implements OnInit {
 
   ]
 
+
   constructor(private menuController:MenuController) { }
   
 
   ngOnInit() {
   }
+
   menu(){
     this.menuController.open('first');
 

@@ -7,39 +7,52 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+<ion-content class="ion-padding">
+  <form #formulario="ngForm" (ngsubmit)="onsubmit()">
+    <ion-list-header>
+      <ion-label>Ingrese sus datos</ion-label>
+      
+    </ion-list-header>
+
 
     <ion-item>
-      <ion-label>Nombre Del Usuario</ion-label>
-      <ion-input type="text" placeholder="NicoYBryan" requiered name="nombreU"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Edad</ion-label>
-      <ion-input type="number" placeholder="Annos" requiered name="Edad"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Numero De telefono</ion-label>
-      <ion-input type="number" placeholder="fono" requiered name="telefono"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Correo Electronico</ion-label>
-      <ion-input type="email" placeholder="nicodani@gmail.com" patern="^([a-zA-Z0-9-.]+)@([a-zA-Z0-9-.]+).([a-zA-Z]{2,5})$" [(ngModel)]="usuario.email" required name=""></ion-input>
+      <ion-label>Nombre Usuario:</ion-label>
+      <ion-input type="text" name="nombreU" placeholder="Akiles_voy" required></ion-input>
     
-
     </ion-item>
+
+    <ion-item>
+      <ion-label>Edad:</ion-label>
+      <ion-input type="number" name="edad" placeholder="12" 
+      required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Numero telefonico:</ion-label>
+      <ion-input type="number" name="numeroT" placeholder="982345382" required></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Correo Electronico:</ion-label>
+      <ion-input type="email" name="email" [(ngModel)]="usuario.email" placeholder="fulanito@gmail.com" 
+                 pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></ion-input>
+    </ion-item>
+
     <ion-item>
       <ion-label>Contraseña</ion-label>
-      <ion-input type="password" placeholder="12345678" [(ngModel)]="usuario.password" required name="contrasena"></ion-input>
+      <ion-input type="password" name="password" [(ngModel)]="usuario.password" placeholder="123321" required></ion-input>
     </ion-item>
-    <ion-button [disabled]="formulario.invalid" type="submit" routerlink="/primario" expand="block" fill="clear" shape="round">
+
+    <br>
+   
+    <ion-button [disabled]="formulario.invalid" type="submit" routerLink="/primario">
+        
       Click me
     </ion-button>
+    
 
-  
+
   </form>
 
 </ion-content>

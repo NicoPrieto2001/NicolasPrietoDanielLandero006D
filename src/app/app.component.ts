@@ -10,18 +10,18 @@ interface componente {
 
 
 
-
-
-
-
-
-
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
+
+
+
 export class AppComponent {
+
+  constructor() {}
+
   componentes:componente[]=[
     {
       icon:'aperture-sharp',
@@ -36,11 +36,5 @@ export class AppComponent {
       redirecTo:'/terciario'
       
     }
-
-
-
-
-
   ]
-  constructor() {}
 }

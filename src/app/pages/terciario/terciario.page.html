@@ -7,6 +7,10 @@
   </ion-toolbar>
 </ion-header>
 
+<!--esto es para hacer un formulario el cual onsubmit es cuando coloque en submit , el ngModel 
+es para que tome la clase de terciario.page.ts, colocando primero el nombre de la clase 
+y despues lo que se guardara-->
+
 <ion-content class="ion-padding">
   <form #formulario="ngForm" (ngsubmit)="onsubmit()">
     <ion-list-header>
@@ -45,7 +49,8 @@
     </ion-item>
 
     <br>
-   
+    
+    <!--disbled es par que mientras esten vacios no se pueda mandar datos -->
     <ion-button [disabled]="formulario.invalid" type="submit" routerLink="/primario">
         
       Click me

@@ -22,6 +22,7 @@ export class AppComponent {
 
   constructor() {}
 
+  /* esto es para los link de la hamburguesa, con los links , y el titulo que ira alado*/
   componentes:componente[]=[
     {
       icon:'aperture-sharp',

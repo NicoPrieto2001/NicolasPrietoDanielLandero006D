@@ -17,19 +17,19 @@
 
     <ion-item>
       <ion-label>Nombre Usuario:</ion-label>
-      <ion-input type="text" name="nombreU" placeholder="Akiles_voy" required></ion-input>
+      <ion-input type="text" name="nombreU" [(ngModel)]="usuario.nombreU" placeholder="Akiles_voy" required></ion-input>
     
     </ion-item>
 
     <ion-item>
       <ion-label>Edad:</ion-label>
-      <ion-input type="number" name="edad" placeholder="12" 
+      <ion-input type="number" name="edad" placeholder="12"  [(ngModel)]="usuario.edad"
       required></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Numero telefonico:</ion-label>
-      <ion-input type="number" name="numeroT" placeholder="982345382" required></ion-input>
+      <ion-input type="number" name="numeroT" placeholder="982345382" required  [(ngModel)]="usuario.telefono"></ion-input>
     </ion-item>
 
 

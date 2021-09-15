@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TerciarioPage implements OnInit {
   usuario={
+    nombreU:'',
+    edad:'',
+    telefono:'',
     email:'',
     password:''
   }

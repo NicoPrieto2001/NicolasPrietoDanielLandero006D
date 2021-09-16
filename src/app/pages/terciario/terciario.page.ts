@@ -10,7 +10,7 @@ export class TerciarioPage implements OnInit {
   
   /* esto es para validar los formularios , y poder guardar los datos ingresados*/
 
-  usuario={
+  usuario ={
     nombreU:'',
     edad:'',
     telefono:'',
@@ -25,7 +25,7 @@ export class TerciarioPage implements OnInit {
 
   onSubmit(){
     console.log('submit');
-    console.log(this.usuario)
+    console.log(this.usuario);
   }
 
 }

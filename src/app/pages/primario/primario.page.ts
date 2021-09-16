@@ -16,14 +16,14 @@ export class PrimarioPage implements OnInit {
   componentes:componente[]=[
     {
       icon:'aperture-sharp',
-      name:'secundario',
+      name:'Acerca de nosotros',
       redirecTo:'/secundario'
       
     },
 
     {
       icon:'car-sharp',
-      name:'terciario',
+      name:'Fromulario',
       redirecTo:'/terciario'
       
     }

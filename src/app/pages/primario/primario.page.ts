@@ -23,7 +23,7 @@ export class PrimarioPage implements OnInit {
 
     {
       icon:'car-sharp',
-      name:'Fromulario',
+      name:'Formulario',
       redirecTo:'/terciario'
       
     }

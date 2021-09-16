@@ -26,14 +26,14 @@ export class AppComponent {
   componentes:componente[]=[
     {
       icon:'aperture-sharp',
-      name:'secundario',
+      name:'ayuda',
       redirecTo:'/secundario'
       
     },
 
     {
       icon:'car-sharp',
-      name:'terciario',
+      name:'configuracion',
       redirecTo:'/terciario'
       
     }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -17,11 +18,22 @@ export class TerciarioPage implements OnInit {
     email:'',
     password:''
   }
-  constructor() { }
-
+  constructor(private alertcontroller:AlertController) { }
+  
+  async alerta() {
+    const alert = await this.alertcontroller.create({
+      message: 'Datos enviados',
+      buttons: ['OK']
+    });
+  
+    await alert.present();
+  }
+  
+  
   ngOnInit() {
 
   }
+  
 
   onSubmit(){
     console.log('submit');

@@ -8,7 +8,9 @@
       
     </ion-buttons>
 
-    <ion-title >Formulario</ion-title>
+    <ion-title >
+      <ion-img src="/assets/icono2.png"></ion-img>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,18 +18,15 @@
 es para que tome la clase de terciario.page.ts, colocando primero el nombre de la clase 
 y despues lo que se guardara-->
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding parte-t">
 
- 
-
-  <ion-img src="/assets/icono2.png"></ion-img>
 
   <br>
 
   <h3 class="alinear-l">Ingrese sus datos</h3> 
 
 
-  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()" class="parte-t2">
 
 
 
@@ -39,7 +38,7 @@ y despues lo que se guardara-->
 
     <ion-item>
       <ion-label position="floating">Edad:</ion-label>
-      <ion-input type="number" name="edad" placeholder="12"  [(ngModel)]="usuario.edad"
+      <ion-input type="number" name="edad" placeholder="12"  [(ngModel)]="usuario.edad" min="15" max="100"
       required></ion-input>
     </ion-item>
 
@@ -57,13 +56,13 @@ y despues lo que se guardara-->
 
     <ion-item>
       <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" name="password" [(ngModel)]="usuario.password" placeholder="123321" maxlength="18" minlength="6" required ></ion-input>
+      <ion-input type="password" name="password" [(ngModel)]="usuario.password" placeholder="123321" maxlength="18" minlength="6"  required ></ion-input>
     </ion-item>
 
     <br>
     
     <!--disbled es par que mientras esten vacios no se pueda mandar datos -->
-    <ion-button slot="end" [disabled]="formulario.invalid" type="submit" routerLink="/primario" >
+    <ion-button slot="end" [disabled]="formulario.invalid" type="submit" routerLink="/primario" (click)="alerta()">
         
       Click me
     </ion-button>

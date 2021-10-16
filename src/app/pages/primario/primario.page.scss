@@ -12,8 +12,9 @@
 .color-f
 {
     
-    --background: linear-gradient(to bottom, #dc0000, #a9001d, #720621, #3b0e1a, #000000);
-    
+   /*--background: linear-gradient(to bottom, #dc0000, #a9001d, #720621, #3b0e1a, #000000);
+    */
+    --background: linear-gradient(to right, #0acffe 0%, #495aff 100%);
 }
 
 ion-list{
@@ -23,7 +24,7 @@ ion-list{
 .cabezera{
     
     //--background: linear-gradient(to right, #b10707, #cc493d, #e1776f, #f0a3a0, #f9cfcf);
-    --background: linear-gradient(to right bottom, #ff0000, #f10202, #e40304, #d60505, #c90606, #bb1110, #ac1817, #9d1d1c, #882625, #722c2b, #5a2f2f, #413131)
+    --background: linear-gradient(to right top, #00fff4, #00d1fd, #00a0ff, #0069ea, #381eb0);
 }
 
 

@@ -22,8 +22,8 @@ export class TerciarioPage implements OnInit {
   
   async alerta() {
     const alert = await this.alertcontroller.create({
-      message: 'Datos enviados',
-      buttons: ['OK']
+      message: 'Datos enviados exitosamente',
+      buttons: ['aceptar']
     });
   
     await alert.present();

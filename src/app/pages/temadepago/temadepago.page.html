@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>temadepago</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Datos</h3>
+
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+
+    <ion-item>
+      <ion-label>Numero De tarjeta de credito/debito </ion-label> <br>
+      <ion-input type="number" name="Numerot" [(ngModel)]="usuario.Numerot" placeholder="1234-5678-1234-5678" required
+        maxlength="19" minlength="16"></ion-input>
+
+
+
+
+    </ion-item>
+    <ion-item>
+      <ion-label>codigo de seguridad</ion-label>
+      <br>
+      <ion-input type="number" name="code" [(ngModel)]="usuario.code" placeholder="123" required maxlength="3"
+        minlength="3"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fecha Vencimiento</ion-label>
+      <br>
+      <ion-input type="number" name="date" [(ngModel)]="usuario.date" placeholder="10/03/2001" required maxlength="5"
+        minlength="4"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nombre Completo</ion-label>
+      <br>
+      <ion-input type="text" name="name" [(ngModel)]="usuario.name" placeholder="nombre" required maxlength="50"
+        minlength="4"></ion-input>
+    </ion-item>
+    <ion-button slot="end" [disabled]="formulario.invalid" type="submit" routerLink="/primario" (click)="alerta()">enviar
+    </ion-button>
+  </form>
+
+</ion-content>

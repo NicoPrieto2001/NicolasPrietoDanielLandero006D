@@ -24,17 +24,19 @@ export class AppComponent {
 
   /* esto es para los link de la hamburguesa, con los links , y el titulo que ira alado*/
   componentes:componente[]=[
-    {
-      icon:'aperture-sharp',
-      name:'ayuda',
-      redirecTo:'/secundario'
-      
-    },
+  
 
     {
-      icon:'car-sharp',
-      name:'configuracion',
-      redirecTo:'/terciario'
+      icon:'phone-portrait-outline',
+      name:'mapa',
+      redirecTo:'/map'
+    },
+
+   { icon:'card-outline',
+      name:'Tema de Pago',
+      redirecTo:'/temadepago'
+
+      
       
     }
   ]

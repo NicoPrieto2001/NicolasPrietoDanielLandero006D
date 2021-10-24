@@ -20,7 +20,15 @@ const routes: Routes = [
   {
     path: 'terciario',
     loadChildren: () => import('./pages/terciario/terciario.module').then( m => m.TerciarioPageModule)
+  },  {
+    path: 'map',
+    loadChildren: () => import('./pages/map/map.module').then( m => m.MapPageModule)
   },
+  {
+    path: 'temadepago',
+    loadChildren: () => import('./pages/temadepago/temadepago.module').then( m => m.TemadepagoPageModule)
+  },
+
 ];
 
 @NgModule({

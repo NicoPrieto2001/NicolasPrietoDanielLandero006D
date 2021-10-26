@@ -10,9 +10,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SecundarioPage implements OnInit {
 
-  apis=[]
+  dias = []
 
-  constructor(private api:DatosapiService, private http:HttpClient) { }
+  constructor(/*private api:DatosapiService,*/ private http:HttpClient) { }
 
   ngOnInit() {
     /*
@@ -22,14 +22,13 @@ export class SecundarioPage implements OnInit {
       
     });*/
 
-    this.http.get<any>('https://apis.digital.gob.cl/fl/feriados/2021').subscribe(res => {
+    this.http.get<any>('https://apis.digital.gob.cl/fl/feriados/2021')
+      .subscribe(res => {
       console.log(res);
-      this.apis = res.results;
+      this.dias = res.results;
     
       
-    })
-
-
+    });
   }
 
 

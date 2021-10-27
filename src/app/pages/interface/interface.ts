@@ -1,13 +1,17 @@
-export interface int{
-    nombre?:string;
-    comentarios?:string;
-    fecha?:Date;
-    irrenunciables?:number;
-    tipo?:string;
-    leyes:Leyes[];
+export interface int {
+    nombre:        string;
+    comentarios?:   string;
+    fecha:         Date;
+    irrenunciable: string;
+    tipo:          string;
+    leyes?:        Leye[];
 }
 
-export interface Leyes{
-    nombre?:string;
-    url?:string; 
+
+
+export interface Leye {
+    nombre: string;
+    url:    string;
 }
+
+

@@ -9,7 +9,7 @@ export class DatosapiService {
   constructor(private datos:HttpClient) { }
 
   obtenerDatos(){
-    return this.datos.get<int>('https://apis.digital.gob.cl/fl/feriados/2021');
+    return this.datos.get<any>('https://apis.digital.gob.cl/fl/feriados/2021');
   }
 
 

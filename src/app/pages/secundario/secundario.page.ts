@@ -23,7 +23,7 @@ export class SecundarioPage implements OnInit {
       this.dias= res;
     });
     
-    /*
+    /*este es ottra forma 
     this.http.get<any>('https://apis.digital.gob.cl/fl/feriados/2021')
       .subscribe(res => {
       console.log(res);

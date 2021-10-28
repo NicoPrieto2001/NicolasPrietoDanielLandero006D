@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
 export interface Datos{
-  id:number,
-  Nombre :string,
-  edad:number,
-  numeroT:number,
-  correo:string,
-  contrasena:string,
-  modified:number
+  id:number;
+  apodo:string;
+  edad:number;
+  numeroT:number;
+  correo:string;
+  contrasena:string;
+  modified:number;
 }
 
 
@@ -32,7 +32,6 @@ export class DatosService {
 
   }
 
-
   addDatos(dato: Datos):Promise<any>{
     return this.storage.get(ITEMS_KEY).then((datos : Datos[])=>{
        if (datos) {
@@ -48,7 +47,7 @@ export class DatosService {
     //Nos permmite obtener la información almacenada en el storage 
     //por medio de sus keys 
  
-    getDatos():Promise<Datos[]>{
+    getDatos(): Promise<Datos[]>{
      return this.storage.get(ITEMS_KEY);
    }
  
@@ -88,6 +87,7 @@ export class DatosService {
      });
  
    }
+ 
  
 
 }

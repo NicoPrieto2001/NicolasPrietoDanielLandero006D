@@ -74,7 +74,7 @@ export class TerciarioPage implements OnInit {
 
   //update
   updateDatos(dato: Datos){
-    dato.apodo = `UPDATED: ${dato.apodo}`;
+    dato.nombre = `UPDATED: ${dato.nombre}`;
     dato.modified = Date.now();
     this.storageService.updateDatos(dato).then(item=>{
       this.showToast('Elemento actualizado!')

@@ -22,7 +22,7 @@ y despues lo que se guardara-->
 
     <ion-item>
       <ion-label position="floating">Nombre :</ion-label>
-      <ion-input type="text" name="nombreU"[(ngModel)]="newDato.apodo" placeholder="Akiles_voy" required  maxlength="20" minlength="5"></ion-input>
+      <ion-input type="text" name="nombreU"[(ngModel)]="newDato.nombre" placeholder="Akiles_voy" required  maxlength="20" minlength="5"></ion-input>
     
     </ion-item>
 
@@ -42,6 +42,12 @@ y despues lo que se guardara-->
       <ion-label position="floating">Correo Electronico:</ion-label>
       <ion-input type="email" name="email" [(ngModel)]="newDato.correo" placeholder="fulanito@gmail.com" 
                  pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Auto:</ion-label>
+      <ion-input type="text" name="auto" [(ngModel)]="newDato.auto" placeholder="samsung" 
+                required></ion-input>
     </ion-item>
 
     <ion-item>
@@ -76,6 +82,9 @@ y despues lo que se guardara-->
               <ion-text color="secondary"> 
                 <p>{{dato.correo}}</p>
               </ion-text>
+              <ion-text color="secondary">
+                <p>{{dato.auto}}</p>  
+            </ion-text>    
               <ion-text color="secondary">
                   <p>{{dato.contrasena}}</p>  
               </ion-text>     

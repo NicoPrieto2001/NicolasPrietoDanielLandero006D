@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 
 
@@ -20,11 +21,10 @@ interface componente {
 
 export class AppComponent {
 
-  constructor() {}
+  constructor(private alertController:AlertController) {}
 
   /* esto es para los link de la hamburguesa, con los links , y el titulo que ira alado*/
   componentes:componente[]=[
-  
 
     {
       icon:'phone-portrait-outline',
@@ -35,9 +35,10 @@ export class AppComponent {
    { icon:'card-outline',
       name:'Tema de Pago',
       redirecTo:'/temadepago'
+      
+    },
 
-      
-      
-    }
   ]
+
+  
 }

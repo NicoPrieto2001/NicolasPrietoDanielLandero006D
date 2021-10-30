@@ -3,11 +3,12 @@ import { Storage } from '@ionic/storage';
 
 export interface Datos{
   id:number;
-  apodo:string;
+  nombre:string;
   edad:number;
   numeroT:number;
   correo:string;
   contrasena:string;
+  auto : string;
   modified:number;
 }
 
@@ -74,7 +75,7 @@ export class DatosService {
     //Eliminar
    deleteDatos(id: number): Promise<Datos>{
      return this.storage.get(ITEMS_KEY).then((datos : Datos[])=>{
-       if (!datos || datos.length === 0){
+       if (!datos || datos.length == 0){
          return null;
        }
        let toKeep: Datos[] = []; 

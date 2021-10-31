@@ -24,6 +24,7 @@ export class RegistroPage implements OnInit {
     this.formularioRegistro = this.fb.group({
       'nombre': new FormControl("",Validators.required),
       'password': new FormControl("",Validators.required),
+      'numeroT': new FormControl("",Validators.required),
       'Cpassword': new FormControl("",Validators.required)
       
     });
@@ -39,6 +40,17 @@ export class RegistroPage implements OnInit {
     if(this.formularioRegistro.invalid){
       const alert = await this.alertController.create({
         message: 'Se necesita que se rellenen todos los campos ',
+        buttons: ['aceptar']
+      });
+  
+      await alert.present();
+      return;
+
+    }
+
+    if(f.password != f.Cpassword){
+      const alert = await this.alertController.create({
+        message: 'deben ser iguales las contraseñas',
         buttons: ['aceptar']
       });
   

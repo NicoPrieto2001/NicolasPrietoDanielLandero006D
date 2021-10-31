@@ -23,24 +23,10 @@ export class PrimarioPage implements OnInit {
 
     {
       icon:'car-sharp',
-      name:'registrarse como conductor',
+      name:'agregar un nuevo auto',
       redirecTo:'/terciario'
       
     },
-
-    {
-      icon:'accessibility-outline',
-      name:'registrarse',
-      redirecTo:'/login'
-      
-    }
-   
-    
-
-
-
-
-
   ]
 
 

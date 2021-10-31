@@ -27,21 +27,8 @@ y despues lo que se guardara-->
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Edad:</ion-label>
-      <ion-input type="number" name="edad" placeholder="12"  [(ngModel)]="newDato.edad" min="15" max="100"
-      required></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">Numero telefonico:</ion-label>
-      <ion-input type="number" name="numeroT" placeholder="982345382" required  [(ngModel)]="newDato.numeroT"></ion-input>
-    </ion-item>
-
-
-    <ion-item>
-      <ion-label position="floating">Correo Electronico:</ion-label>
-      <ion-input type="email" name="email" [(ngModel)]="newDato.correo" placeholder="fulanito@gmail.com" 
-                 pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></ion-input>
+      <ion-label position="floating">Numero telefonico (+569):</ion-label>
+      <ion-input type="number" name="numeroT" placeholder="82345382" required  [(ngModel)]="newDato.numeroT" maxlength="8"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -51,8 +38,9 @@ y despues lo que se guardara-->
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" name="password" [(ngModel)]="newDato.contrasena" placeholder="123321" maxlength="18" minlength="6"  required ></ion-input>
+      <ion-label position="floating">Patente :</ion-label>
+      <ion-input type="text" name="auto" [(ngModel)]="newDato.patente" placeholder="xssasdasf" 
+                required></ion-input>
     </ion-item>
 
     <ion-button (click)="addDatos()" expand="full">
@@ -71,23 +59,21 @@ y despues lo que se guardara-->
           <ion-item>
 
             <ion-label text-wrap> 
-              <h3>{{dato.apodo}}</h3>
+              <h3>{{dato.nombre}}</h3>
               <ion-text color="secondary">
             
-                <p>{{dato.edad}}</p>
+                <p>{{dato.auto}}</p>
               </ion-text>
               <ion-text color="secondary">
-                <p>{{dato.numeroT}}</p>
-              </ion-text>
-              <ion-text color="secondary"> 
-                <p>{{dato.correo}}</p>
+                <p>{{dato.patente}}</p>
               </ion-text>
               <ion-text color="secondary">
                 <p>{{dato.auto}}</p>  
-            </ion-text>    
+              </ion-text>
               <ion-text color="secondary">
-                  <p>{{dato.contrasena}}</p>  
-              </ion-text>     
+            
+                <p>{{dato.numeroT}}</p>
+              </ion-text>       
               <p>{{dato.modified | date: 'short'}}</p>
             </ion-label>
 

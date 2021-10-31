@@ -4,11 +4,9 @@ import { Storage } from '@ionic/storage';
 export interface Datos{
   id:number;
   nombre:string;
-  edad:number;
-  numeroT:number;
-  correo:string;
-  contrasena:string;
   auto : string;
+  patente:string;
+  numeroT:number;
   modified:number;
 }
 

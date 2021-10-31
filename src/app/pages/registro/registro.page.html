@@ -15,39 +15,53 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Login</ion-card-title>
-    </ion-card-header>
+<ion-content class="parte-t" >
+  <br>
+  <br>
+  <br>
+  <br>
 
-    <ion-card-content>
-      <form [formGroup]="formularioRegistro">
-        <ion-item>
-          <ion-label position="floating">Ingrese su Nombre:</ion-label>
-          <ion-input formControlName="nombre"></ion-input>
-        </ion-item>
-    
-        <ion-item>
-          <ion-label position="floating">Ingrese su Contraseña:</ion-label>
-          <ion-input formControlName="password" type="password"></ion-input>
-        </ion-item>
+  <div id="container">
+    <ion-card color="dark">
+      <ion-card-header>
+        <ion-card-title>Registrarse</ion-card-title>
+      </ion-card-header>
 
-        <ion-item>
-          <ion-label position="floating">confirmar su Contraseña:</ion-label>
-          <ion-input formControlName="Cpassword" type="password"></ion-input>
-        </ion-item>
-    
-    
-      </form>
-      <br>
+      <ion-card-content>
+        <form [formGroup]="formularioRegistro">
+          <ion-item>
+            <ion-label position="floating">Ingrese su Nombre:</ion-label>
+            <ion-input formControlName="nombre"></ion-input>
+          </ion-item>
 
-      <ion-button (click)="guardar()" routerlink="/login">
-        registrarse
-      </ion-button>
+          <ion-item>
+            <ion-label position="floating">Numero Telefonico (+569):</ion-label>
+            <ion-input formControlName="numeroT" type="number"></ion-input>
+          </ion-item>
+
 
       
-    </ion-card-content>
-  </ion-card>
+          <ion-item>
+            <ion-label position="floating">Ingrese su Contraseña:</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">confirmar su Contraseña:</ion-label>
+            <ion-input formControlName="Cpassword" type="password"></ion-input>
+          </ion-item>
+      
+      
+        </form>
+        <br>
+
+        <ion-button (click)="guardar()" routerlink="/login">
+          registrarse
+        </ion-button>
+
+        
+      </ion-card-content>
+    </ion-card>
+  </div>
 
 </ion-content>

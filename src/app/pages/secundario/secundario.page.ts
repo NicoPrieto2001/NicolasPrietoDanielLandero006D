@@ -18,19 +18,9 @@ export class SecundarioPage implements OnInit {
   ngOnInit() {
     
     this.api.obtenerDatos().subscribe(res => {
-      /*console.log('datos', res);
-      this.leyes.push(...res.leyes);*/
       this.dias= res;
     });
     
-    /*este es ottra forma 
-    this.http.get<any>('https://apis.digital.gob.cl/fl/feriados/2021')
-      .subscribe(res => {
-      console.log(res);
-      this.dias = res;
-    
-      
-    });*/
   }
 
 

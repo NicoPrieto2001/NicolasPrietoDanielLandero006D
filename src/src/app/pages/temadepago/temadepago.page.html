@@ -1,25 +1,13 @@
 <ion-header>
-  <ion-toolbar class="cabeza">
-    <ion-buttons slot="start">
-
-      <ion-back-button defaultHref="/" text="volver" type="ios" class="blanco"></ion-back-button>
-
-    </ion-buttons>
-
-
-    <ion-title class="blanco">
-  
-        <ion-img src="/assets/icono2.png" class="imagen2"></ion-img>
-      
-    </ion-title>
+  <ion-toolbar>
+    <ion-title>temadepago</ion-title>
   </ion-toolbar>
-  
 </ion-header>
 
 <ion-content>
   <h3>Datos</h3>
 
-  <form  #formulario="ngForm" (ngSubmit)="onSubmit()">
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
 
     <ion-item>
       <ion-label>Numero De tarjeta de credito/debito </ion-label> <br>

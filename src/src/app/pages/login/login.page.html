@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar class="cabeza ion-align-items-center">
+    <ion-title>
+  
+        <ion-img src="/assets/icono2.png" class="imagen2"></ion-img>
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="parte-t">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <ion-card color="dark">
+    <ion-card-header class="ion-text-center">
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item>
+          <ion-label position="floating">Ingrese su Nombre:</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label position="floating">Ingrese su Contraseña:</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+    
+      </form>
+      <br>
+
+      <ion-button (click)="ingresar()" (click)="mensaje()" >
+        ingresar
+      </ion-button>
+
+      <ion-button slot="end" class="ion-text-left" routerLink="/registro">
+        Registrarse
+      </ion-button>
+
+      
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
+<ion-footer>
+

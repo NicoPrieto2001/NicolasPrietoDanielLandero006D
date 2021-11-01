@@ -1,0 +1,38 @@
+<ion-header >
+
+  <ion-toolbar class="cabezera">
+    <ion-buttons slot="start" class="menu">
+      <ion-button (click)="menu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="dark"></ion-icon>
+        
+      </ion-button>
+    </ion-buttons>
+
+
+    <ion-title class="letra-b">
+    
+      <ion-img src="/assets/icono2.png" class="imagen2"></ion-img>
+  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding color-f">
+  <br>
+
+  <ion-img src="/assets/icono.png" class="imagen" ></ion-img>
+  
+  
+  <br>
+
+  <ion-list class="atras">
+    <ion-item *ngFor="let c of componentes" detail="true" [routerLink]="c.redirecTo" color="dark">
+      <ion-icon class="letras" slot="start" [name]="c.icon" color="warning"></ion-icon>
+      
+      {{c.name}}
+    </ion-item>
+  </ion-list>
+
+  
+
+</ion-content>

@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar class="cabeza">
+    <ion-buttons slot="start">
+
+      <ion-back-button defaultHref="/" text="volver" type="ios" class="blanco"></ion-back-button>
+
+    </ion-buttons>
+
+
+    <ion-title class="blanco">
+  
+        <ion-img src="/assets/icono2.png" class="imagen2"></ion-img>
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding atras">
+  <ion-item class="atras">
+    <ion-card class="ion-padding">
+      <h2>¿Quienes somos?</h2>
+      <p class="letras">Somos una empresa que se implementa al servicio del cliente a un transporte con conductor para llevar al
+      cliente al destino de donde quiera dirigirse. Este servicio es economico, estable ya que como empresa, queremos
+      algo factible para el cliente para que llege bien a su destino. Esta aplicación se puede encontrar en Play Store y
+      App Store.
+      </p>
+
+      <ion-item class="espacio">
+        <ion-img class="tamanoimg" src="/assets/googlestore.png"></ion-img>
+        <ion-img class="tamanoimg" src="/assets/appstore.png"></ion-img>      
+      </ion-item>
+
+      
+    </ion-card>
+  </ion-item>
+  
+  <ion-card class="ion-padding">
+    <h2>Creadores de Fast And Happy</h2>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <h2>Daniel Alexander Landero Abriga</h2>
+    <br>
+    <p class="letraS">Es un analista programador,de Duoc Uc. Soltero, me gusta cuaquier tipo de deporte ,se programar en html,python y plql ,
+      me gusta ver siempre el lado positivo de las cosas . mi frase favorita es "La vida no es asi , la vida es complicada . LA VIDA SON PUÑETAZOS"
+    </p>
+      
+  </ion-card>
+    
+  <br>
+  <ion-card class="ion-padding">
+    <h2>Nicolas Ignacio Prieto Herrera</h2>
+    <br> 
+    <p class="letras">Es un analista programador, tambien de Duoc Uc. Soltero de por vida. Le gusta mucho los deportes como el voleibol
+    y futbol, tiene una capacidad de implementar css y javascript en HTML, su fuente más fuerte. </p>
+      
+  </ion-card>
+
+
+  <ion-card class="ion-padding">
+    <ion-item>
+      <ion-icon slot="start" name="logo-instagram"></ion-icon>
+      <ion-label>Ingreso A Ig Fast And Happy </ion-label>
+      <ion-button slot="end" expand="block" fill="clear" shape="round" href="https://www.instagram.com/fast._.and._.happy/" target="blank_">
+        Instagram
+        </ion-button>
+    </ion-item>
+
+    <ion-item>
+        <ion-icon slot="start" name="logo-facebook"></ion-icon>
+        <ion-label>Ingreso A Facebook Fast And Happy</ion-label>
+        <ion-button slot="end" expand="block" fill="clear" shape="round" href="https://www.facebook.com/profile.php?id=100055956309960" target="blank_">
+          Facebook
+        </ion-button>
+    </ion-item>
+  </ion-card>
+
+  <h3>Informacion </h3>
+  <p>Dias del año en cual , suben los precios por temas de es un dia feriado </p>
+
+  <ion-list>
+    <ion-item *ngFor="let i of dias">
+      <ion-card>
+
+        <ion-label>{{i.nombre}}</ion-label>  
+        <ion-label>{{i.fecha}}</ion-label>
+      </ion-card>
+      
+
+      
+      
+    </ion-item>
+  </ion-list>
+
+</ion-content>

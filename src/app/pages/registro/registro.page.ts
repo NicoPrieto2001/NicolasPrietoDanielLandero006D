@@ -23,6 +23,7 @@ export class RegistroPage implements OnInit {
   constructor(private fb:FormBuilder, private alertController:AlertController,public navC:NavController) {
     this.formularioRegistro = this.fb.group({
       'nombre': new FormControl("",Validators.required),
+      'correo': new FormControl("",Validators.required),
       'password': new FormControl("",Validators.required),
       'numeroT': new FormControl("",Validators.required),
       'Cpassword': new FormControl("",Validators.required)

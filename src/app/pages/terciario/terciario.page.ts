@@ -3,6 +3,8 @@ import { AlertController, Platform,IonList, ToastController } from '@ionic/angul
 import { DatosService,Datos } from 'src/app/servicios/datos.service';
 
 
+
+
 @Component({
   selector: 'app-terciario',
   templateUrl: './terciario.page.html',

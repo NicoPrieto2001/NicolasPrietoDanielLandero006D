@@ -24,5 +24,10 @@
 }
 
 .titulo{
-    color: #ffff;
+    color: #000;
+    background:radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+
+.atras{
+    --background: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
 }

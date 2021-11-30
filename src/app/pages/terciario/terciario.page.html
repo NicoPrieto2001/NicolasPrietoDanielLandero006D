@@ -18,11 +18,12 @@
 es para que tome la clase de terciario.page.ts, colocando primero el nombre de la clase 
 y despues lo que se guardara-->
 
-<ion-content >
-  <ion-item>
+<ion-content class="atras">
+  <ion-item class="atras">
     <ion-label class="titulo">Ingrese sus Datos</ion-label>
   </ion-item>
 
+  <ion-card>
     <ion-item>
       <ion-label position="floating">Nombre :</ion-label>
       <ion-input type="text" name="nombreU"[(ngModel)]="newDato.nombre" placeholder="Akiles_voy" required  maxlength="20" minlength="5"></ion-input>
@@ -49,6 +50,12 @@ y despues lo que se guardara-->
     <ion-button (click)="addDatos()" expand="full">
       Agregar datos
     </ion-button>
+    
+  </ion-card>
+
+  <ion-card>
+    
+ 
 
 
     <ion-list #myList>
@@ -91,6 +98,7 @@ y despues lo que se guardara-->
         
       </ion-list>
     </ion-list>
+  </ion-card>
 
 
   
